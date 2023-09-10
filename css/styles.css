@@ -643,6 +643,7 @@ img{
 }
 
 .modal__close__btn{
+    background-color: var(--cornflower);
     position: absolute;
     display: flex;
     align-items: center;
