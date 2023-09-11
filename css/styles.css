@@ -120,7 +120,6 @@ img{
     width: 100%;
 }
 
-
 .nav__item__link:hover,
 .address__link:hover{
     color: var(--ocean);
@@ -391,6 +390,7 @@ img{
 
 .customer__items:hover{
     border: 1px solid var(--ocean);
+    cursor: pointer;
 }
 
 .customer__items svg{
