@@ -101,6 +101,8 @@ img{
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .nav__item__link::before{
@@ -120,7 +122,7 @@ img{
 
 
 .nav__item__link:hover,
-.address__link:hover {
+.address__link:hover{
     color: var(--ocean);
 }
 
@@ -136,6 +138,8 @@ img{
     line-height: 24px;
     letter-spacing: 0.32px;
     font-style: normal;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .address{
@@ -150,9 +154,6 @@ img{
 .address__item{
     display: inline-block;
 }
-
-
-
 /* Hero Section */
 .hero{
     position: relative;
@@ -200,6 +201,8 @@ img{
     cursor: pointer;
     font-family: inherit;
     isolation: isolate;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 
@@ -324,6 +327,8 @@ img{
     justify-content: center;
     border-radius: 20px;
     fill: var(--cloud);
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 
@@ -376,6 +381,8 @@ img{
     height: 88px;
     border: 1px solid var(--lightslate);
     border-radius: 4px;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .customer__items:hover .section__customer__link{
@@ -391,6 +398,8 @@ img{
     height: 56px;
     fill: var(--lightslate);
     fill: currentColor;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 
@@ -472,6 +481,8 @@ img{
     justify-content: center;
     border-radius: 20px;
     fill: var(--cloud);
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 
@@ -504,6 +515,8 @@ img{
     background: var(--cloud);
     cursor: pointer;
     font-family: inherit;
+    transition: background-color var(--white) cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .btn__container:hover{
@@ -654,6 +667,8 @@ img{
     border: 1px solid var(--lightslate);
     margin-top: 24px;
     left: 360px;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .modal__close__btn svg{
@@ -664,6 +679,8 @@ img{
     justify-content: center;
     width: 8px;
     height: 8px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .modal__close__btn:hover svg{
     color: white;
