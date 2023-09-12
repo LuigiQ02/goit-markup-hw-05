@@ -105,7 +105,19 @@ img{
     transition-duration: 250ms;
 }
 
-.nav__item__link::before{
+.nav__item__link.active {
+    position: relative;
+    text-decoration: none;
+    color: var(--ocean);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.nav__item__link::after{
     content: '';
     position: absolute;
     height: 4px;
@@ -114,16 +126,35 @@ img{
     bottom: -28px;
     left: 0;
     width: 0;
+    transition: 250ms;
+    pointer-events: none;
 }
 
-.nav__item__link:hover::before{
+.nav__item__link.active::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+    bottom: -28px;
+    left: 0;
     width: 100%;
+    transition: 250ms;
+    pointer-events: none;
+}
+.nav__item__link:hover::after{
+    width: 100%;
+}
+
+.nav__item__link.active::after{
+    opacity: 1;
 }
 
 .nav__item__link:hover,
 .address__link:hover{
     color: var(--ocean);
 }
+
 
  .nav__list{
     display: inline-flex;
@@ -625,9 +656,16 @@ img{
     top: 0;
     left: 0;
     pointer-events: auto;
-    opacity: 1;
+    opacity: 2;
     transition-property: visibility, opacity;
     transition-duration: 250ms;
+}
+.modal::before {
+    content: '';
+    background-color: var(--navybluemodal);
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
 }
 
 .modal.is-hidden{
